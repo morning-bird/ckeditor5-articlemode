@@ -29,6 +29,7 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
+import LineHeight from 'ckeditor5-line-height-plugin/src/lineheight';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -56,7 +57,8 @@ ClassicEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	Alignment,
-	FontSize
+	FontSize,
+	LineHeight
 ];
 
 // Editor configuration.
@@ -69,16 +71,21 @@ ClassicEditor.defaultConfig = {
 			'FontSize',
 			'bold',
 			'italic',
-			'link',
+			'lineHeight',
+			'|',
 			'bulletedList',
 			'numberedList',
+			'|',
+			'link',
 			'imageUpload',
 			'blockQuote',
-			'insertTable',
 			'mediaEmbed',
 			'undo',
 			'redo'
 		]
+	},
+	lineHeight: {
+		options: [ 0.5, 1, 1.5, 2, 2.5 ]
 	},
 	fontSize: {
 		options: [

@@ -74,5 +74,8 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "ckeditor5-line-height-plugin": "^0.1.2"
   }
 }
