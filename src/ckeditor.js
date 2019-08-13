@@ -80,6 +80,18 @@ ClassicEditor.defaultConfig = {
 			'redo'
 		]
 	},
+	fontSize: {
+		options: [
+			10,
+			12,
+			'default',
+			14,
+			16,
+			18,
+			20,
+			22
+		]
+	},
 	image: {
 		toolbar: [
 			'imageStyle:full',

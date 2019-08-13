@@ -1,6 +1,6 @@
 {
   "name": "@ckeditor/ckeditor5-articlemode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Custom CK Editor for personal use",
   "keywords": [
     "ckeditor5-build",
